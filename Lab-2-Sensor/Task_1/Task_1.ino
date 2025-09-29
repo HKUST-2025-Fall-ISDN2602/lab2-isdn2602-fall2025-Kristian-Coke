@@ -5,7 +5,7 @@
 #define echoPin 38
 
 /*define sound speed in m*/
-#define SOUND_SPEED 340
+#define SOUND_SPEED 343
 
 /*Define the varibles required*/
 long duration;
@@ -37,6 +37,7 @@ void loop() {
   // Prints the distance in the Serial Monitor
   Serial.print("Distance (cm): ");
   Serial.println(distance/100);
+  Serial.println(duration);
 
   delay(1000); //Change the delay if you want
 }
